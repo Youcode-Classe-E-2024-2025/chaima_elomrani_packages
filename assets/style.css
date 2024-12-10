@@ -1,0 +1,243 @@
+body{
+    width: 100%;
+}
+
+
+
+header{
+    background-color: #bebebe;
+    width: 100%;
+    padding: 1.25rem;
+}
+
+#navbtns{
+    color: #891604;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    font-size: 20px;
+    font-family: serif;
+    justify-content: center;
+}
+
+
+#title{
+    color:#c21d03;
+    font-family: serif;
+    font-size: 50px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+#addbtn{
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: serif;
+    font-size: 15px;
+    border: solid 2px #c21d03 ;
+    border-radius: 20px;
+    background-color: #ab190299;
+    --raise-distance:4px
+    
+    
+    
+}
+
+#addbtn:hover{
+    transform: scale(1.2);
+    box-shadow: var(--raise-distance) var(--raise-distance) 0px #c21d03;
+}
+
+.affichage{
+
+    background-color: #ebeaead6;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* display: flex;
+    justify-content: center; */
+
+
+}
+
+
+#auteur{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#packagee-title{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#version{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+
+
+#card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+
+#card{
+    background-color: #f1f1f1;
+    border: solid 4px #c21d03;
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-top: 40px;
+     
+}
+
+#card h3{
+   color: #c21d03;
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 25px;
+   font-family: serif;
+  
+}
+#card p{
+    margin-bottom: 4px;
+}
+
+
+.buttons{
+    display: flex ;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+
+     
+}
+
+
+
+
+.editbtn{
+   background-color: #4CAF50;
+   padding: 3px;
+   border-radius: 10px;
+}
+
+.editbtn:hover{
+    background-color: #45a049
+}
+
+
+.suppbtn{
+   background-color: #fc1616;
+   padding: 3px;
+   border-radius: 10px;
+}
+
+
+.supptbtn:hover{
+    background-color: #e57171
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+
+
+  /* ***************************form section ******************* */
+
+
+  .form-container {
+    background-color: #f9f9f9; /* Fond gris clair pour le formulaire */
+    border: 3px solid #c21d03; /* Bordure orange foncé */
+    border-radius: 8px;
+    padding: 50px;
+    width: 900px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 50;
+    position: absolute;
+    top: 22%;
+    right: 20%;
+    display: none;
+  }
+
+  .form-container h3 {
+    color: #c21d03; /* Titre en orange foncé */
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 30px;
+  }
+
+
+
+ #icon{
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    top: 6%;
+    right: 5%;
+ }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #333; /* Texte gris foncé */
+    margin-bottom: 5px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  .form-group input:focus {
+    border-color: #ff6700; /* Bordure orange foncé sur focus */
+    outline: none;
+  }
+
+  .btn-submit {
+    background-color: #c21d03; /* Bouton orange foncé */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-submit:hover {
+    background-color: #e65c00; /* Couleur légèrement plus foncée au survol */
+  }
+
