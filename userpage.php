@@ -21,7 +21,7 @@
         <button><b> Home</b></button>
         <button><b>Auteurs</b></button>
         <button><b>Packages</b></button>
-        <button><b>Filter</b></button>
+        <button><b><a href="index.php">Administration</a></b></button>
       </div>
     </header>
 
