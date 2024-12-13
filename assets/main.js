@@ -5,7 +5,7 @@ const closebtn =document.getElementById('icon');
 addbtn.addEventListener('click', function(){
     console.log('test');
     
-  form.style.display='block';
+    form.style.display='block';
 });
 
 closebtn.addEventListener('click', function(){

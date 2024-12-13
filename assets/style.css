@@ -122,6 +122,8 @@ header{
 }
 
 
+
+
 .buttons{
     display: flex ;
     justify-content: center;
@@ -249,3 +251,17 @@ header{
     border-radius: 5px;
     font-size: 1rem;
   }
+
+/* #version{
+  padding: 50px;
+
+}
+
+#version option{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+} */
+ 
