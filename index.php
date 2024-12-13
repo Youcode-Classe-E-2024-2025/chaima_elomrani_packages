@@ -12,3 +12,4 @@ if (isset($_GET['page'])) {
 } else {
     include_once "views/home.php";
 }
+

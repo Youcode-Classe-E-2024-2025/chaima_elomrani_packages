@@ -1,4 +1,4 @@
-</html>
+<?php include_once "controllers/home_crud.php"; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,18 +24,42 @@
     </header>
 
     <section id="card-container">
-        <div id="card">
-            <div class="card">
-                <h3><b>Informations sur le Package</b></h3>
-                <p><strong>Auteur :</strong> Nom de l'Auteur</p>
-                <p><strong>Titre de Package :</strong> Titre du Package</p>
-                <p><strong>description:</strong> description Package</p>
-                <p><strong>Version :</strong> 1.0.0</p>
-            </div>
-        </div>
-    </section>
 
-    <script src="/assets/main.js"></script>
+<?php
+foreach ($packages as $row) {
+    ?>
+
+    <div id="card">
+
+        <div class="card">
+            <h3><b> Package Details </b></h3>
+            <p><strong>Auteur: </strong><?= htmlspecialchars($row['name']); ?></p>
+            <p><strong>Email auteur : </strong><?= htmlspecialchars($row['email']); ?></p>
+            <p><strong>Titre de Package : </strong><?= htmlspecialchars($row['titre']); ?></p>
+            <p><strong>description : </strong><?= htmlspecialchars($row['description']); ?></p>
+            <p><strong>Version :</strong>
+                <?= isset($row['version_number']) && $row['version_number'] !== null
+                    ? htmlspecialchars($row['version_number'])
+                    : 'Non disponible'; ?>
+            </p>
+            <div class="buttons">
+                    <button class="btn editbtn">Modifier</button>
+                    <button class="btn suppbtn">Supprimer</button>
+                </div>
+
+        </div>
+
+    </div>
+<?php
+}
+?>
+
+
+
+
+
+</section>
+s/main.js"></script>
 </body>
 
 </html>

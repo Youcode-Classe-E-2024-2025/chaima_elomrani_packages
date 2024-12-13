@@ -79,6 +79,10 @@
                     <label for="description">Description :</label>
                     <textarea id="description" name="description" placeholder="Description du package"></textarea>
                 </div>
+                <div class="form-group">
+                    <label for="autheur_name">Autheur name :</label>
+                    <textarea id="autheur_name" name="autheur_name" placeholder="Description du package"></textarea>
+                </div>
 
 
                 <div class="form-group">
