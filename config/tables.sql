@@ -63,7 +63,7 @@ INSERT INTO packages (titre, description) VALUES
 ('Three.js', 'A library for creating 3D animations and graphics in the browser.')
 
 
-INSERT INTO versions (version_number, date_realisation) VALUES
+INSERT INTO versions (version_number, package_id) VALUES
 ('18.2.0'),
 ('3.2.47'),
 ('16.1.3'),
